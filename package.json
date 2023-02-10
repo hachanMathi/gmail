@@ -1,0 +1,21 @@
+{
+  "name": "@gmail/monorepo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://hachanMathi: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@github.com/hachanMathi/gmail.git",
+  "license": "MIT",
+  "private": true,
+  "workspaces": {
+    "packages": [
+      "api",
+      "web",
+      "packages/*"
+    ],
+    "nohoist": [
+      "**/react",
+      "**/react-dom",
+      "**/sass",
+      "**/sass/**"
+    ]
+  }
+}
